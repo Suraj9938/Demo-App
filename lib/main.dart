@@ -1,3 +1,4 @@
+import 'package:cooking_app/screens/bookmark_screen.dart';
 import 'package:cooking_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Cooking App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
+      routes: {
+        HomeScreen.routeName: (ctx) => HomeScreen(),
+        BookMarkScreen.routeName: (ctx) => BookMarkScreen(),
+      },
       home: HomeScreen(),
     );
   }

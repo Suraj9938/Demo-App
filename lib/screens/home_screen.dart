@@ -2,6 +2,8 @@ import 'package:cooking_app/widget/categories_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const routeName = "/home_screen";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,11 +13,12 @@ class HomeScreen extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(48),
-                  bottomLeft: Radius.circular(48),
-                ),
-                color: Colors.orange),
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(48),
+                bottomLeft: Radius.circular(48),
+              ),
+              color: Colors.orangeAccent.shade400,
+            ),
             height: MediaQuery.of(context).size.height / 3.7,
             width: double.infinity,
             padding: EdgeInsets.only(

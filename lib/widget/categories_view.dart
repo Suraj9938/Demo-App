@@ -1,3 +1,4 @@
+import 'package:cooking_app/screens/bookmark_screen.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesView extends StatelessWidget {
@@ -17,6 +18,7 @@ class CategoriesView extends StatelessWidget {
                   color: Colors.greenAccent.shade100,
                   borderRadius: BorderRadius.circular(22),
                   child: InkWell(
+                    onTap: () {},
                     child: Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
@@ -64,6 +66,9 @@ class CategoriesView extends StatelessWidget {
                   color: Colors.red.shade100,
                   borderRadius: BorderRadius.circular(22),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, BookMarkScreen.routeName);
+                    },
                     child: Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
@@ -114,6 +119,7 @@ class CategoriesView extends StatelessWidget {
                   color: Colors.yellow.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(22),
                   child: InkWell(
+                    onTap: () {},
                     child: Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
@@ -161,6 +167,9 @@ class CategoriesView extends StatelessWidget {
                   color: Colors.blue.shade100,
                   borderRadius: BorderRadius.circular(22),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, BookMarkScreen.routeName);
+                    },
                     child: Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
